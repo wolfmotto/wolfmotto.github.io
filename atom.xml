@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Wolf's Motto]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2014-06-05T17:29:39+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[VictorZ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Blog]]></title>
+    <link href="http://yoursite.com/blog/2014/06/05/first-blog/"/>
+    <updated>2014-06-05T16:56:22+08:00</updated>
+    <id>http://yoursite.com/blog/2014/06/05/first-blog</id>
+    <content type="html"><![CDATA[<h1>wolfmotto中文</h1>
+]]></content>
+  </entry>
+  
+</feed>
