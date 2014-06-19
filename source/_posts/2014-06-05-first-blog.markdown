@@ -7,3 +7,7 @@ categories:
 ---
 
 #wolfmotto中文
+
+
+
+![text](/images/bird_32_gray.png)
