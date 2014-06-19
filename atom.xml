@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Wolf's Motto]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-06-05T17:29:39+08:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://wolfmotto.github.io/atom.xml" rel="self"/>
+  <link href="http://wolfmotto.github.io/"/>
+  <updated>2014-06-19T12:04:54+08:00</updated>
+  <id>http://wolfmotto.github.io/</id>
   <author>
     <name><![CDATA[VictorZ]]></name>
     
@@ -14,11 +14,69 @@
 
   
   <entry>
+    <title type="html"><![CDATA[hermesJMS With hornetQ]]></title>
+    <link href="http://wolfmotto.github.io/blog/2014/06/18/hermesjms-with-hornetq/"/>
+    <updated>2014-06-18T17:10:09+08:00</updated>
+    <id>http://wolfmotto.github.io/blog/2014/06/18/hermesjms-with-hornetq</id>
+    <content type="html"><![CDATA[<p><em>The prerequisite of this post is that the hornetQ server is already configured to work with Jboss server (i.e. Jboss 7)</em></p>
+
+<p><strong>The environment with below tools:</strong></p>
+
+<ul>
+  <li>HermesJMS v1.14</li>
+  <li>HornetQ Server version 2.2.21.Final</li>
+  <li>Jboss 7</li>
+</ul>
+
+<p><strong>1) Get <a href="http://www.hermesjms.com" title="hermesjms">HermesJMS</a> and install HermesJMS v1.14</strong></p>
+
+<p><strong>2) New a JMS session through ‘Actions’ menu</strong></p>
+
+<p><strong>3) Switch to ‘Providers’ tab and configure classpathgroup, name it ‘hornetq’</strong> <em>(add the jboss-client.jar, you can get this jar file from Jboss7 distribution)</em></p>
+
+<p><img src="http://wolfmotto.github.io/images/hermesjms/02.jpg" alt="hornetq" /></p>
+
+<p><strong>4) Configure ConnectionFactory as below</strong></p>
+
+<ul>
+  <li>Class  : select ‘hermes.JNDIConnectionFactory’  </li>
+  <li>Loader : select ‘hornetq’ </li>
+</ul>
+
+<p><img src="http://wolfmotto.github.io/images/hermesjms/01.jpg" alt="ConnectionFactory" /></p>
+
+<p><strong>5) Add Topic or Queue to the JMS session</strong> <em>(below with a topic=/topic/commonEntity/v1)</em></p>
+
+<p><img src="http://wolfmotto.github.io/images/hermesjms/03.jpg" alt="ConnectionFactory" /></p>
+
+<p><strong>6) Click the Topic or Queue to watch the incoming JMS messages</strong></p>
+
+<p><img src="http://wolfmotto.github.io/images/hermesjms/05.jpg" alt="ConnectionFactory" /></p>
+
+<p><em>Reference:</em></p>
+
+<ol>
+  <li>
+    <p><a href="https://community.jboss.org/wiki/UsingHermesJMSWithHornetQ" title="UsingHermesJMSWithHornetQ">HermesJMSWithHornetQ on Jboss</a></p>
+  </li>
+  <li>
+    <p><a href="http://xebee.xebia.in/index.php/2014/03/16/soap-over-jms-with/">HermesJMS and ActiveMQ integration with SoapUI</a></p>
+  </li>
+</ol>
+
+<hr />
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Octopress Blog]]></title>
-    <link href="http://yoursite.com/blog/2014/06/05/first-blog/"/>
+    <link href="http://wolfmotto.github.io/blog/2014/06/05/first-blog/"/>
     <updated>2014-06-05T16:56:22+08:00</updated>
-    <id>http://yoursite.com/blog/2014/06/05/first-blog</id>
-    <content type="html"><![CDATA[<h1>wolfmotto中文</h1>
+    <id>http://wolfmotto.github.io/blog/2014/06/05/first-blog</id>
+    <content type="html"><![CDATA[<h1 id="wolfmotto">wolfmotto中文</h1>
+
+<p><img src="http://wolfmotto.github.io/images/bird_32_gray.png" alt="text" /></p>
 ]]></content>
   </entry>
   
